@@ -29,3 +29,32 @@ print "Here is a puzzle."
 what = add(age, subtract(height, multiply(weight, divide(iq, 2))))
 
 print "That becomes: ", what, "can you do it by hand?"
+
+
+#testing
+
+
+def add1(a, b):
+    print "ADDING %.2f + %.2f" % (a, b)
+    return a + b
+
+def subtract1(a, b):
+    print "SUBTRACTING %.2f - %.2f" % (a, b)
+    return a - b
+	
+def multiply1(a, b):
+    print "MULTIPLYING %.2f * %.2f" % (a, b)
+    return a * b
+	
+def divide1(a, b):
+    print "DIVIDING %.2f / %.2f" % (a, b)
+    return a / b
+chufa = divide1(34.0, 100)
+print "chufa is ", chufa
+
+	
+result = subtract1(add1(24, (divide1(34.0, 100))), 1023)
+print result
+
+
+
